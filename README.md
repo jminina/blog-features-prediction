@@ -135,6 +135,22 @@ Topic prediction is not really accurate (weighted precision is 0.4, accuracy is 
 
 I didn't expect good results  here.
 
+## Example on unseen data from real python blog
+
+Example text:
+Source of example https://realpython.com/python-enumerate/
+``` 
+In Python, a for loop is usually written as a loop over an iterable object. 
+This means you don’t need a counting variable to access items in the iterable. Sometimes,
+though, you do want to have a variable that changes on each loop iteration.
+Rather than creating and incrementing a variable yourself, you can use Python’s enumerate()to get a counter and the value from the iterable at the same time!
+
+```
+**Prediction:** *Topic: Technology; Age: (20.0, 30.0]; Gender: male; Sign: Cancer*
+In original post, you can see author. He is young a man, the algorithgm result looks proper. Unfortunately I can't find info about his zodiac sign and actual age.
+
+
+
 ## How to improve?
 
 There are some ways to improve my classification. If you have good enough hardware, you can try some hype methods like BERT. Also, all models can be improved with hyperparameters tuning.
